@@ -30,7 +30,7 @@ clearEl.addEventListener("click", () => {
     clear();
 });
 
-//Increase brush size when the respective buttons are clicked
+//Increase brush size when the respective buttons are clicked.
 increaseBtn.addEventListener("click", () => {
     size += 5;
 
