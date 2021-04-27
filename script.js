@@ -14,7 +14,9 @@ let color = "#000000";
 let isPressed = false;
 sizeEl.innerText = size;
 
-colorEl.addEventListener("click", () => {});
+colorEl.addEventListener("change", (e) => {
+    color = e.target.value;
+});
 
 clearEl.addEventListener("click", () => {
     clear();
@@ -66,7 +68,7 @@ function drawLine(x1, y1, x2, y2) {
     ctx.moveTo(x1, y1);
     ctx.lineTo(x2, y2);
     ctx.strokeStyle = color;
-    ctx.lineWidth = size + 10;
+    ctx.lineWidth = size * 2;
     ctx.stroke();
 }
 

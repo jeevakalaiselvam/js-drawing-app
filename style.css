@@ -39,6 +39,10 @@ canvas {
     border: none;
 }
 
+.toolbox > *:last-child {
+    margin-left: auto;
+}
+
 .size {
     padding: 1rem;
 }
@@ -46,4 +50,5 @@ canvas {
 button#clear {
     width: 60px;
     height: 50px;
+    font-size: 2rem;
 }
